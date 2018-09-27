@@ -1,0 +1,3 @@
+[submodule "BlackFire.Unity.Demo/Assets/Plugins/BlackFire"]
+	path = BlackFire.Unity.Demo/Assets/Plugins/BlackFire
+	url = https://github.com/BlackFire-Studio/BlackFire.Unity.git
