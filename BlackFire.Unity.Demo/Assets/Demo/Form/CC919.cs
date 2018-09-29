@@ -9,11 +9,16 @@ using BlackFire;
 
 namespace Alan 
 {
-    public class CC919 : Plane ,IFly_FormGroupMemberCommand
+    public class CC919 : Plane ,IFly_FormGroupMemberCommand,ISignal_FormGroupMembersCommand
     {
         public void Fly()
         {
             Log.Info("CC919 飞行。");
+        }
+
+        public void Signal()
+        {
+            Log.Info("CC919 收到信号。");
         }
     }
 }

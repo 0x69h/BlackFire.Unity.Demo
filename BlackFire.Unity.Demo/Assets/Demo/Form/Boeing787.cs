@@ -9,11 +9,16 @@ using BlackFire;
 
 namespace Alan 
 {
-    public class Boeing787 : Plane //,IFly_FormGroupCommand
+    public class Boeing787 : Plane , ISignal_FormGroupMembersCommand //,IFly_FormGroupCommand
     {
         public void Fly()
         {
             Log.Info("Boeing787 飞行。");
+        }
+        
+        public void Signal()
+        {
+            Log.Info("Boeing787 收到信号。");
         }
     }
 }

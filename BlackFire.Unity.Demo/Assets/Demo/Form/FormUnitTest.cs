@@ -26,9 +26,15 @@ namespace Alan
             var boeing787 = App.Form.Instantiate<Boeing787>(m_Boeing787,"Plane",101);
             
             yield return new WaitForSeconds(1f);
-            Organize.SetCommandPermission<IFly_FormGroupMemberCommand>(100);
-            App.Form.ExecuteCommand<IFly_FormGroupMemberCommand>("Plane",i=>i.Fly());
+            App.Form.ExecuteCommand<IEngineStart_FormGroupCommand>("Plane",i=>i.EngineStart());
 
+            yield return new WaitForSeconds(1f);
+            App.Form.ExecuteCommand<IFly_FormGroupMemberCommand>("Plane",i=>i.Fly());
+            
+            yield return new WaitForSeconds(1f);
+            App.Form.ExecuteCommand<ISignal_FormGroupMembersCommand>("Plane",i=>i.Signal());
+            
+            
         }
     }
 }
