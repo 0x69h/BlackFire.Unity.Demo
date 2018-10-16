@@ -5,10 +5,9 @@
 //----------------------------------------------------
 
 using System;
-using System.Runtime.CompilerServices;
 using BlackFire;
+using BlackFire.Unity;
 using UnityEngine;
-using UnityEngine.Networking;
 
 namespace Alan
 {

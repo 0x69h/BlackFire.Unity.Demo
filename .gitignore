@@ -9,3 +9,4 @@ BlackFire.Unity.Demo/Assets/Plugins/Editor.meta
 
 *.sln
 *.csproj
+BlackFire.Unity.Demo/obj/
